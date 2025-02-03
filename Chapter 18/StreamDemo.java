@@ -1,10 +1,10 @@
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.function.Consumer;
-import java.util.function.Function;
-import java.util.function.Predicate;
-import java.util.function.Supplier;
+// import java.util.Arrays;
+// import java.util.List;
+// import java.util.function.Consumer;
+// import java.util.function.Function;
+// import java.util.function.Predicate;
+// import java.util.function.Supplier;
 
 
 @FunctionalInterface
@@ -13,7 +13,7 @@ interface MathOperation {
     int calculate(int a, int b);
 }
 
-class StreamsDemo {
+class StreamDemo {
 
     public static void main(String[] args) {
         // java 8 -> minimal code, functional programming

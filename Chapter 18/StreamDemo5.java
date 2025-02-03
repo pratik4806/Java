@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class StreamsDemo5 {
+public class StreamDemo5 {
 
     public static void main(String[] args) {
         // Stream - introduce in java 8, used to perocess the collection of data in a functional and declarative manner.

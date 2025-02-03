@@ -14,17 +14,25 @@ public class StreamDemo9 {
         List<Integer> list = Stream.iterate(1, x -> x+1).limit(20000).toList();
         List<Long> factorialList = list.stream().map(StreamDemo9::factorial).toList();
         long endTime = System.currentTimeMillis();
-        System.out.println(endTime - startTime); // 350ms
+        System.out.println(endTime - startTime); // 186ms
 
          // now with parallel stream
         startTime = System.currentTimeMillis();
         list = Stream.iterate(1, x -> x+1).limit(20000).toList();
         factorialList = list.parallelStream().map(StreamDemo9::factorial).toList();
         endTime = System.currentTimeMillis();
-        System.out.println(endTime - startTime); // 85ms
+        System.out.println(endTime - startTime); // 99ms
+
+        startTime = System.currentTimeMillis();
+        list = Stream.iterate(1, x -> x+1).limit(20000).toList();
+        factorialList = list.parallelStream().map(StreamDemo9::factorial).sequential().toList();
+        endTime = System.currentTimeMillis();
+        System.out.println(endTime - startTime); // 22ms
 
         // parallel stream are most effective for the CPU intensive task or large datasets where task are independent
         // they may add overhead for simple task or small datasets.
+
+
 
 
 

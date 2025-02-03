@@ -15,7 +15,7 @@ public class StreamDemo7 {
         list.stream().skip(1).collect(Collectors.toList());
         list.stream().skip(1).toList();
 
-        // 2. forEach
+        // 2. forEach - it is an terminal operator. means it prints the result.
         list.stream().forEach(x -> System.out.println(x));
 
         // reduce - combines the elements to produce the single result
