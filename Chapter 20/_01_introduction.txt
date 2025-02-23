@@ -1,0 +1,14 @@
+Q. what is a collection?
+-> collection is a simply an object that simply represents the group of objects,known as elements.
+
+Q. what is collection framework?
+-> it provides the set of interfaces and classes that helps in managing the group of objects.
+
+
+before introduction of the collection framework in JDK 1.2 java used to rely on variety of classes vector stack hashtable and arrays to store and manipulate the group of objects.
+
+
+NOTE- 
+Iterable is a root interface of the collection framework under the java.lang package
+if any class implements the Iterable interface then we can apply the foreach loop on that collection class.
+
