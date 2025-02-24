@@ -12,6 +12,7 @@ import java.util.LinkedList;
 
 // Memory Overhead: LinkedList requires more memory than ArrayList because each node in a linked list requires extra memory to store references to the next and previous nodes.
 
+// Linked List is not also thread safe.
 public class _06_LinkedList {
     public static void main(String[] args) {
         LinkedList<Integer> ll = new LinkedList<>();

@@ -36,6 +36,9 @@
 // we have put 1 element, it becomes 11
 // then new capacity = 11 * 1.5 = 16.5 = 16(Int) 
 
+
+// ArrayList is not thread Safe.
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
